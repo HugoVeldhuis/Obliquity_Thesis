@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
  # Request nodes from the “all” partition # How many nodes to ask for
 #SBATCH --partition=all

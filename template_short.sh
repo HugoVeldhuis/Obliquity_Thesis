@@ -13,6 +13,6 @@ module purge
 module load anaconda3/2021-05
 conda activate xpsi_py3
 
-module load intel/PSXE/2019u4 # in case the program was compiled with the intel compiler 
+cp -r /home/$USER/TOI1259_RV.csv $OUTPUT_FOLDER/TOI1259_RV.csv
 
 ./Small_fit_test.py # run your program from the directory you submitted your job from

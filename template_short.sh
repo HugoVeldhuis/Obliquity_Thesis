@@ -1,13 +1,13 @@
 #!/bin/sh
 
  # Request nodes from the “all” partition # How many nodes to ask for
-#SBATCH --partition=all
-#SBATCH --nodes 1
-#SBATCH --ntasks 1 # Number of tasks (MPI processes)
-#SBATCH --cpus-per-task 1 # Number of logical CPUS (threads) per task
-#SBATCH --time 0-3:00:00 
-#SBATCH --mem 16gb 
-#SBATCH -J myjob
+SBATCH --partition=all
+SBATCH --nodes 1
+SBATCH --ntasks 1 # Number of tasks (MPI processes)
+SBATCH --cpus-per-task 1 # Number of logical CPUS (threads) per task
+SBATCH --time 0-3:00:00 
+SBATCH --mem 16gb 
+SBATCH -J myjob
 
 module purge
 module load anaconda3/2021-05
